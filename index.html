@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>Torrefazione Colombia · caffè tostato in Ticinese, Milano</title>
 <meta name="description" content="Torrefazione Colombia, torrefazione e bar di quartiere in Corso San Gottardo, Ticinese. Caffè tostato in laboratorio a due passi e servito al banco, dalla brioche del mattino all'aperitivo. Caffè sfuso da comprare.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2329190F'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='%23C08A3E' font-family='Georgia,serif'>C</text></svg>">
 </head>
@@ -282,7 +281,7 @@
       </div>
     </div>
     <div class="mapbox">
-      <iframe title="Mappa — Torrefazione Colombia, Corso San Gottardo 21 Milano" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Torrefazione+Colombia,+Corso+San+Gottardo+21,+Milano&output=embed"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe title="Mappa — Torrefazione Colombia, Corso San Gottardo 21 Milano" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Torrefazione+Colombia,+Corso+San+Gottardo+21,+Milano&output=embed"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&destination=Torrefazione+Colombia+Corso+San+Gottardo+21+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </div>
 </section>
@@ -348,25 +347,59 @@
     </div>
     <p class="disc" data-i18n="ft.disc">Sito dimostrativo indipendente creato per mostrare una possibile presenza online per la Torrefazione Colombia. Foto, recensioni e dettagli provengono da fonti pubbliche di Google Maps e appartengono ai rispettivi proprietari. Nessuna affiliazione con la bottega.</p>
   </div>
+  <p class="privacy-link"><a href="privacy.html">Privacy</a></p>
 </footer>
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"CafeOrCoffeeShop",
-  "name":"Torrefazione Colombia",
-  "description":"Torrefazione e bar di quartiere in Corso San Gottardo, Ticinese, a Milano. Caffè tostato in laboratorio a due passi e servito al banco, dalla colazione all'aperitivo. Caffè sfuso in vendita.",
-  "servesCuisine":["Caffè","Colazione","Aperitivo","Bar"],
-  "priceRange":"€",
-  "url":"https://rotenzark.github.io/torrefazione-colombia/",
-  "telephone":"+39 02 8324 1548",
-  "address":{"@type":"PostalAddress","streetAddress":"Corso San Gottardo 21","addressLocality":"Milano","postalCode":"20136","addressCountry":"IT"},
-  "geo":{"@type":"GeoCoordinates","latitude":45.4495826,"longitude":9.1799896},
-  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.3","reviewCount":"99"},
-  "openingHoursSpecification":[
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"20:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"09:00","closes":"18:00"}
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Torrefazione Colombia",
+  "description": "Torrefazione e bar di quartiere in Corso San Gottardo, Ticinese, a Milano. Caffè tostato in laboratorio a due passi e servito al banco, dalla colazione all'aperitivo. Caffè sfuso in vendita.",
+  "servesCuisine": [
+    "Caffè",
+    "Colazione",
+    "Aperitivo",
+    "Bar"
+  ],
+  "priceRange": "€",
+  "url": "https://rotenzark.github.io/torrefazione-colombia/",
+  "telephone": "+39 02 8324 1548",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Corso San Gottardo 21",
+    "addressLocality": "Milano",
+    "postalCode": "20136",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4495826,
+    "longitude": 9.1799896
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "07:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
   ]
 }
 </script>
@@ -385,5 +418,6 @@
 </script>
 
 <script src="js/main.js"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
